@@ -1,0 +1,93 @@
+insert into cargo(nome_cargo, salario) values ('Mecanico', 3200);
+insert into cargo(nome_cargo, salario) values ('Pintor', 2500);
+insert into cargo(nome_cargo, salario) values ('Lavador', 1850);
+insert into cargo(nome_cargo, salario) values ('Gerente', 4100);
+
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Joaquina', '352.013.580-98', '25/02/1963', 'joaquina@gmail.com','1');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Vanderlei', '289.205.160-65', '26/11/1946', 'vander@gmail.com','2');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Fernando', '237.268.550-33', '22/08/1975', 'fernan@gmail.com','3');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Joao', '118.071.540-33', '09/05/1995', 'joaao@gmail.com','1');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Valentim', '175.659.200-45', '10/05/1977', 'valente@gmail.com','1');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Sabrina', '851.460.050-87', '05/06/1972', 'sabrina@gmail.com','4');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Thiago', '504.446.400-70', '05/02/1969', 'thi@gmail.com','2');
+insert into funcionario (nome,cpf,dt_nascimento,email,cd_cargo) values ('Henrique', '371.017.980-71', '16/03/1989', 'rique@gmail.com','2');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Jessica', '657.824.160-41', '13/08/1966', 'jess@gmail.com','62.099.796/0001-39');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Marcos', '295.759.850-79', '13/08/1966', 'marcos@gmail.com','67.801.221/0001-30');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Augusto', '056.643.620-57', '22/08/1975', 'augustin@gmail.com','44.643.654/0001-09');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Francisco', '498.903.680-80', '10/05/1977', 'chico@gmail.com','36.689.767/0001-17');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Fagner', '764.265.870-28', '11/12/1970', 'fagner10@gmail.com','10.395.728/0001-13');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Felipe', '665.278.410-60', '25/10/1998', 'felipeep@hotmail.com','15.582.254/0001-32');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Yuri', '482.227.917-02', '26/07/1984', 'yurics@outlook.com','15.140.081/0001-00');
+insert into cliente (nome,cpf,dt_nascimento,email,cnpj) values ('Gabriela', '995.648.376-18', '05/06/1987', 'gabi87@hotmail.com','72.536.151/0001-70');
+
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('1', '1');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('2', '2');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('3', '3');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('4', '1');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('5', '1');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('6', '4');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('7', '2');
+insert into funcionario_cargo (cd_funcionario,cd_cargo) values ('8', '2');
+
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('1','(48)966521531');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('2','(48)910221355');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('3','(48)966521510');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('4','(48)932451588');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('5','(48)998465421');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('6','(48)901121466');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('7','(48)948612308');
+insert into telefone_cliente (cd_cliente, telefone_cliente) values ('8','(48)945554555');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('1','(48)998499995');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('2','(48)900114479');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('3','(48)900258555');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('4','(48)985454566');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('5','(48)998499995');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('6','(48)900114479');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('7','(48)900258555');
+insert into telefone_funcionario (cd_funcionario, telefone_funcionario) values ('8','(48)985454566');
+
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('1', 'Sao jose', 'Kobrasol', 'Rua azul', '01', '88.102-010');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('2', 'Sao jose', 'Campinas', 'Rua amarelo', '54', '88.102-452');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('3', 'Sao jose', 'Kobrasol', 'Rua vermelho', '03', '88.102-856');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('4', 'Sao jose', 'Palhoca', 'Rua preto', '456', '88.102-322');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('5', 'Sao jose', 'Palhoca', 'Rua branco', '71', '88.102-840');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('6', 'Sao jose', 'Kobrasol', 'Rua rosa', '77', '88.102-879');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('7', 'Sao jose', 'Kobrasol', 'Rua verde', '62', '88.102-885');
+insert into endereco_cliente (cd_cliente,cidade,bairro,rua,numero,cep) values ('8', 'Sao jose', 'Campinas', 'Rua marrom', '53', '88.102-215');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('1', 'Florianopolis', 'Saco grande', 'Rua vinte', '09', '88.102-843');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('2', 'Florianopolis', 'Ribeirao', 'Rua quarenta', '17', '88.02-052');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('3', 'Florianopolis', 'Tapera', 'Rua doze', '88', '88.102-500');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('4', 'Florianopolis', 'Campeche', 'Rua lilas', '23', '88.102-259');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('5', 'Florianopolis', 'Centro', 'Rua dpeneira', '1313', '88.145-770');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('6', 'Florianopolis', 'Abraao', 'Rua verao', '452', '88.165-902');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('7', 'Sao jose', 'Areias', 'Rua das bruxas', '1 ', '88.402-120');
+insert into endereco_funcionario (cd_funcionario,cidade,bairro,rua,numero,cep) values ('8', 'Sao Jose', 'Barreiros', 'Rua vieira', '996', '88.150-933');
+
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Michillin', 15, 'Pneu bem redondo', 'Pneu');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Petroras', 42, 'Oleo bem oleoso', 'Oleo');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Tramontina', 10, 'A320', 'Escapamento');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Pirelli', 31, 'Pneu redondo', 'Pneu');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Renault', 12, 'V8 2015', 'Motor');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Fiat', 5, 'V6 2013', 'Motor');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Fiat', 2, 'Fiat Uno Mille 2018', 'Chassi');
+insert into inventario (marca_item, quantidade_item, descricao, nome_item) values ('Rosseti', 3, 'B100 Sport', 'Volante');
+
+insert into veiculo (modelo, marca, cor, placa) values ('Celta', 'Chevrolet', 'Preto', 'MDS-7895');
+insert into veiculo (modelo, marca, cor, placa) values ('Astra', 'Chevrolet', 'Cinza', 'MNO-1984');
+insert into veiculo (modelo, marca, cor, placa) values ('Ka', 'Ford', 'Vermelho', 'MZI-4985');
+insert into veiculo (modelo, marca, cor, placa) values ('Uno', 'Fiat', 'Branco', 'MDB-4645');
+insert into veiculo (modelo, marca, cor, placa) values ('Fiesta', 'Ford', 'Preto', 'MLL-1095');
+insert into veiculo (modelo, marca, cor, placa) values ('Voyage', 'VolksWagen', 'Vermelho', 'MJZ-2885');
+insert into veiculo (modelo, marca, cor, placa) values ('Ecosport', 'Ford', 'Branco', 'MAZ-0035');
+insert into veiculo (modelo, marca, cor, placa) values ('Fit', 'Honda', 'Branco', 'MPP-5560');
+
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('1', '2');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('2', '3');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('3', '1');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('4', '4');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('5', '8');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('6', '5');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('7', '6');
+insert into cliente_veiculo (cd_cliente, cd_veiculo) values ('8', '7');
+
+insert into usuario_senha (usuario, senha) values ('admin','aPtEHBFLWVbT8Jy1tpqzqQ==');	

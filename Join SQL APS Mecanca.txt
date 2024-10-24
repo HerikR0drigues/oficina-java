@@ -1,0 +1,23 @@
+Join's SQL APS Mecanica
+
+//join tabela funcionario e cargo
+SELECT f.nome as Nome, f.cpf as CPF, f.dt_nascimento as Data_de_Nascimento, f.email as Email, e.cidade as Cidade, t.telefone_funcionario as Telefone, c.salario as Salario, c.nome_cargo as Cargo
+FROM cargo as c, funcionario as f, endereco_funcionario as e, telefone_funcionario as t
+WHERE c.cd_cargo = f.cd_cargo
+AND t.cd_telefone_funcionario = f.cd_cargo
+AND e.cd_endereco_funcionario = f.cd_cargo;
+
+//join tabela cliente e veiculo
+SELECT c.nome as Nome, c.cpf as CPF, c.dt_nascimento as Data_de_Nascimento, c.email as Email, c.cnpj as CNPJ, e.cidade as Cidade, t.telefone_cliente as Telefone, CONCAT(v.marca,' ', v.modelo, ' ', v.placa) as Veiculo
+FROM veiculo as v, cliente as c, endereco_cliente as e, telefone_cliente as t
+WHERE v.cd_veiculo = c.cd_cliente
+AND t.cd_telefone_cliente = c.cd_cliente
+AND e.cd_endereco_cliente = c.cd_cliente;
+
+//select tabela inventario
+SELECT marca_item as Marca, nome_item as Nome, quantidade_item as Quantidade, descricao as Descrição
+FROM inventario;
+
+//select tabela veiculo
+SELECT marca as Marca, modelo as Modelo, cor as Cor, placa as Placa
+FROM veiculo; 
